@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="158.75mm"
+   height="58.258068mm"
+   viewBox="0 0 160 58.716793"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="logo-title.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="2.0686841"
+     inkscape:cx="234.20685"
+     inkscape:cy="114.80728"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="1072"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-23.702508,-43.502798)">
+    <g
+       id="g1"
+       transform="translate(0.62495782,0.22936334)">
+      <path
+         style="fill:#e48547;fill-opacity:1;stroke-width:0.908625"
+         d="M 38.395682,72.500338 C 38.289364,57.562987 38.987197,59.40395 32.397032,57.785927 28.315253,56.783766 25.982959,54.87973 24.549894,52.537511 c -0.787932,-1.287809 -0.989538,-2.750224 -0.756285,-4.302766 0.452977,-3.015043 3.305795,-4.592017 6.324083,-4.724403 4.363662,-0.191384 11.109865,3.283661 11.109865,7.612249 v 13.298937 13.290855 l 15.871785,-2.727238 v 14.684522 l -18.70366,3.239575 z"
+         id="path1-4-8-0-7"
+         sodipodi:nodetypes="sssssscccccs" />
+      <path
+         style="fill:#000000;fill-opacity:1;stroke-width:0.908625"
+         d="m 68.156515,72.763322 c 0.106318,14.937355 -0.591515,13.09639 5.99865,14.714415 4.081779,1.002159 6.414074,2.9062 7.847138,5.248417 0.787933,1.287803 0.989538,2.750225 0.756285,4.302765 -0.452976,3.015041 -3.305795,4.592021 -6.324083,4.724401 -4.363661,0.19139 -11.109864,-3.283658 -11.109864,-7.612247 V 80.842132 67.551286 L 49.452855,70.278514 V 55.594006 l 18.70366,-3.239575 z"
+         id="path1-4-8-3-2-1"
+         sodipodi:nodetypes="sssssscccccs" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.7519px;font-family:'Poor Richard';-inkscape-font-specification:'Poor Richard';text-align:center;text-anchor:middle;fill:#e48547;fill-opacity:1;stroke:#cee67c;stroke-width:1.39269;stroke-linecap:round"
+         x="134.43571"
+         y="79.706726"
+         id="text6"><tspan
+           sodipodi:role="line"
+           id="tspan6"
+           style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-size:19.7519px;font-family:Manrope;-inkscape-font-specification:'Manrope Ultra-Bold';fill:#e48547;fill-opacity:1;stroke:none;stroke-width:1.39269"
+           x="134.43571"
+           y="79.706726">MEMENTA</tspan></text>
+    </g>
+  </g>
+</svg>

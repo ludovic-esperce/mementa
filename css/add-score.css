@@ -1,0 +1,10 @@
+#files {
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: 1fr auto; */
+}
+
+#files > div {
+    display: flex;
+    align-items: center;
+}

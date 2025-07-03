@@ -1,0 +1,3 @@
+--primary: #e48547ff
+--secondary: black
+--grey-background: #545D61
