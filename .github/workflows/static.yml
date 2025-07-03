@@ -26,13 +26,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
 
-      - name: Run Lighthouse CI
-        uses: treosh/lighthouse-ci-action@v2
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
         with:
-          configPath: "./lighthouserc.json"
-          temporaryPublicStorage: true
+          node-version: '14'
+
+      - name: Install W3C Validator
+        run: npm install -g w3c-validator
+
+      - name: Run W3C Validation
+        run: w3c-validator --also-check-css index.html
+      
+      - name: Install Accessibility Checker
+        run: npm install -g pa11y-ci
+
+      - name: Run Accessibility Checker
+        run: pa11y-ci --html index.html
 
   deploy:
     needs: CI
