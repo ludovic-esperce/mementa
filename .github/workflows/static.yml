@@ -33,8 +33,9 @@ jobs:
         with:
           configPath: "./lighthouserc.json"
           temporaryPublicStorage: true
-          
+
   deploy:
+    needs: CI
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
