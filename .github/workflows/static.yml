@@ -32,6 +32,28 @@ jobs:
         with:
           node-version: '20'
       
+      - name: Installation des dépendances Chromium utilisée pour tester l'accessibilité
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libnss3 \
+            libatk-bridge2.0-0 \
+            libxss1 \
+            libasound2 \
+            libgtk-3-0 \
+            libx11-xcb1 \
+            libxcb-dri3-0 \
+            libdrm2 \
+            libxcomposite1 \
+            libxdamage1 \
+            libxrandr2 \
+            xdg-utils \
+            fonts-liberation \
+            libgbm1 \
+            libu2f-udev \
+            libvulkan1 \
+            --no-install-recommends
+      
       - name: Mise à jour des packages JS
         run: npm update -g
       
