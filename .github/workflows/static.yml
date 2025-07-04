@@ -24,10 +24,10 @@ jobs:
   CI:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout code (récupération du code du dépôt)
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
+      - name: Configuration de Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
@@ -39,7 +39,6 @@ jobs:
             libnss3 \
             libatk-bridge2.0-0 \
             libxss1 \
-            libasound2 \
             libgtk-3-0 \
             libx11-xcb1 \
             libxcb-dri3-0 \
