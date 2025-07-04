@@ -42,10 +42,12 @@ jobs:
       #     sleep 3
 
       - name: Install W3C Validator
-        run: npm install -g w3c-html-validator
+        run: npm install -g vnu-jar
 
       - name: Run W3C Validation
-        run: html-validator index.html
+        run: |
+          java -jar /usr/local/lib/node_modules/vnu-jar/build/dist/vnu.jar --exit-zero-always=false index.html
+        continue-on-error: false
       
       - name: Install Accessibility Checker
         run: npm install -g pa11y-ci
