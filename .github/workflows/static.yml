@@ -51,8 +51,7 @@ jobs:
             fonts-liberation \
             libu2f-udev \
             libvulkan1 \
-            wget \
-            --no-install-recommends
+            wget
       
       - name: Mise à jour des packages JS
         run: npm update -g
