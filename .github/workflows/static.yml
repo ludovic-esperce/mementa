@@ -1,12 +1,11 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+name: Vérification HTML + accessibilité & déploiement
 
 on:
   # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
 
-  # Allows you to run this workflow manually from the Actions tab
+  # Permet de démarrer ce workflow manuellement à partir de l'interface graphique
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
@@ -33,11 +32,20 @@ jobs:
         with:
           node-version: '20'
       
-      - name: Install html hint
+      - name: Mise à jour des packages JS
+        run: npm update -g
+      
+      - name: Installation de l'outil HTML Hint
         run: npm install -g htmlhint
+      
+      - name: Installation de l'outil pa11y-ci (vérificateur de règles d'accessibilité)
+        run: npm install -g pa11y-ci
 
-      - name: Run HTMLHint
-        run: npx htmlhint "**/*.html"
+      - name: Exécution de HTML Hint
+        run: npx htmlhint **/*.html
+      
+      - name: Exécution de pa11y
+        run: pa11y-ci **/*.html
       
   deploy:
     needs: CI
