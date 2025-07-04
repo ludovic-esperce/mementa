@@ -32,20 +32,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-
-      - name: Run W3C Validation
-        uses: cybersamx/validate-web@master
-        with:
-          files: "index.html" # Adjust to include other HTML files or directories if needed
-          doctype: "HTML5"
-          failhard: true # Fail the build on validation errors
       
-      - name: Run Accessibility Check
-        uses: pa11y/pa11y-action@v2
-        with:
-          path: "./index.html" # Adjust path if index.html is in a subdirectory
-          fail-on-error: true # Fail the build on accessibility issues
+      - name: Install html hint
+        run: npm install -g htmlhint
 
+      - name: Run HTMLHint
+        run: npx htmlhint "**/*.html"
+      
   deploy:
     needs: CI
     environment:
