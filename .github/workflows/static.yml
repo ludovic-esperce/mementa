@@ -45,7 +45,7 @@ jobs:
         run: npm install -g w3c-html-validator
 
       - name: Run W3C Validation
-        run: html-validator --continue index.html
+        run: html-validator index.html
       
       - name: Install Accessibility Checker
         run: npm install -g pa11y-ci
