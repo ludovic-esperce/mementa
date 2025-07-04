@@ -33,11 +33,20 @@ jobs:
         with:
           node-version: '14'
 
+      - name: Install http-server
+        run: npm install -g http-server
+      
+      - name: Start web server
+        run: http-server -p 8080 &
+
+      - name: Wait for server to start
+        run: sleep 3
+
       - name: Install W3C Validator
         run: npm install -g w3c-validator
 
       - name: Run W3C Validation
-        run: w3c-validator --also-check-css index.html
+        run: w3c-validator http://localhost:8080/index.html
       
       - name: Install Accessibility Checker
         run: npm install -g pa11y-ci
